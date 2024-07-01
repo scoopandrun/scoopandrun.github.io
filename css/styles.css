@@ -1,66 +1,92 @@
 /* Typography */
 
 html {
-	font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+  --background: #ffffff;
+  --color: #000000;
 }
 
 @media (min-width: 576px) {
-	html {
-		font-size: 14px;
-	}
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    max-width: 90vw;
+  }
 }
 
 @media (min-width: 768px) {
-	html {
-		font-size: 16px;
-	}
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    max-width: 85vw;
+  }
 }
 
 @media (min-width: 992px) {
-	html {
-		font-size: 18px;
-	}
+  html {
+    font-size: 18px;
+  }
+
+  body {
+    max-width: 80vw;
+  }
 }
 
 @media (min-width: 1200px) {
-	html {
-		font-size: 20px;
-	}
-}
+  html {
+    font-size: 20px;
+  }
 
-.icons-social i {
-	font-size: 3em;
+  body {
+    max-width: 75vw;
+  }
 }
 
 /* Custom Styles */
 
+body {
+  background: var(--background, #ffffff);
+  color: var(--color, #000000);
+  margin: auto;
+}
+
 main {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	justify-content: center;
-	padding: 0 30px;
-	text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  padding: 0 30px;
+  text-align: center;
 }
 
 main > .intro {
-	font-family: 'Reem Kufi', sans-serif;
-	font-size: 3.75em;
-	font-weight: 600;
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 3.75em;
+  font-weight: 600;
 }
 
 main > .tagline {
-	font-size: 1.5rem;
-	margin: 1.5rem 0;
-	font-weight: 100;
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  font-weight: 100;
 }
 
 .icons-social i {
-	padding: 10px;
+  padding: 10px;
+  font-size: 3em;
 }
 
-.devto {
-	margin-bottom: -0.20rem;
+.icons-social a {
+  color: var(--color, #000000);
+}
+
+.icons-social a svg path {
+  fill: var(--color, #000000);
+}
 }
 
 .devto svg {
