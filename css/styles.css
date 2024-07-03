@@ -75,6 +75,15 @@ main > .tagline {
   font-weight: 100;
 }
 
+.link {
+  color: var(--color, #000000);
+}
+
+.links .link[target="_blank"] ~ .fa-arrow-up-right-from-square {
+  font-size: 0.8rem;
+  margin-inline-start: 0.3rem;
+}
+
 .icons-social i {
   padding: 10px;
   font-size: 3em;
@@ -87,11 +96,63 @@ main > .tagline {
 .icons-social a svg path {
   fill: var(--color, #000000);
 }
+
+footer {
+  min-height: 2rem;
 }
 
-.devto svg {
-	margin-bottom: -0.20rem;
-	margin-left: 0.675rem;;
-	width: 2.65rem;
-	height: 2.65rem;
+/* Portfolio */
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  margin-block-end: 3rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.explanation {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.en {
+  font-style: italic;
+}
+
+.en::before {
+  content: "\01F1EC \01F1E7 "; /* 🇬🇧 */
+  font-style: normal;
+}
+
+.fr::before {
+  content: "\01F1EB \01F1F7 "; /* 🇫🇷 */
+  font-style: normal;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  width: 60%;
+  border: none;
+  border-top: 1px solid var(--color, #000000);
+}
+
+.vertical-separator {
+  display: inline-block;
+  width: 1px;
+  height: 1em;
+  border-left: 1px solid var(--color, #000000);
+  margin-inline: 1rem;
 }
